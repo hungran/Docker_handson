@@ -31,8 +31,10 @@ services:
       WORDPRESS_DB_NAME: wordpress
      networks: 
       - app-network
+
   jenkins:
     image: jenkins:latest
+    restart: always
     ports:
       - "8080:80"
       - "50000:50000"
