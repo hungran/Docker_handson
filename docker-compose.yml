@@ -22,7 +22,7 @@ services:
        - db
      image: wordpress:latest
      ports:
-       - "8080:80"
+       - "8090:80"
      restart: always
      environment:
       WORDPRESS_DB_HOST: db:3306
@@ -32,6 +32,15 @@ services:
      networks: 
       - app-network
 
+    jenkins:
+      image: jenkins:latest
+      ports:
+        - "8080:80"
+        - "50000:50000"
+      environment: 
+        JENKINS_SLAVE_AGENT_PORT: 50001
+      networks: 
+        - app-network
 #Docker Networks
 networks:
   app-network:
