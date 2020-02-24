@@ -36,7 +36,7 @@ services:
      image: jenkins:latest
      restart: always
      ports:
-       - "8080:80"
+       - "8080:8080"
        - "50000:50000"
      environment: 
       JENKINS_SLAVE_AGENT_PORT: 50001
@@ -47,8 +47,6 @@ services:
      user: nobody:nobody
      networks: 
        - app-network
-
-
 #Docker Networks
 networks:
   app-network:
