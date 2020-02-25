@@ -35,11 +35,13 @@ services:
    jenkins:
      image: jenkins:latest
      restart: always
+     command: [apt-get update && apt-get upgrade -y]
      ports:
        - "8080:8080"
        - "50000:50000"
      environment: 
       JENKINS_SLAVE_AGENT_PORT: 50001
+      JENKINS_ROOT_PASSWORD: jenkins
      networks: 
        - app-network
    alpine:
