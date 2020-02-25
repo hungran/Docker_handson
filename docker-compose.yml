@@ -35,7 +35,7 @@ services:
    jenkins:
      image: jenkins:latest
      restart: always
-     command: [apt-get update && apt-get upgrade -y]
+     command: ['apt-get update', 'apt-get upgrade -y']
      ports:
        - "8080:8080"
        - "50000:50000"
