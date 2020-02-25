@@ -32,7 +32,7 @@ services:
    jenkins:
      image: 'bitnami/jenkins:2'
      ports:
-      - '80:8080'
+      - '8800:8080'
       - '443:8443'
       - '50000:50000'
      networks: 
