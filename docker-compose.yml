@@ -29,15 +29,13 @@ services:
      networks: 
       - app-network
 
-   jenkins:
-     image: jenkins:latest
-     restart: always
+
+    jenkins:
+     image: 'bitnami/jenkins:2'
      ports:
-       - "8080:8080"
-       - "50000:50000"
-     environment: 
-      JENKINS_SLAVE_AGENT_PORT: 50001
-      JENKINS_ROOT_PASSWORD: jenkins
+      - '80:8080'
+      - '443:8443'
+      - '50000:50000'
      networks: 
        - app-network
    alpine:
