@@ -29,8 +29,7 @@ services:
      networks: 
       - app-network
 
-
-    jenkins:
+   jenkins:
      image: 'bitnami/jenkins:2'
      ports:
       - '80:8080'
