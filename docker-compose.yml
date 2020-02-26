@@ -31,6 +31,7 @@ services:
 
    jenkins:
      image: 'bitnami/jenkins:2'
+     volumes: /var/run/docker.sock:/var/run/docker.sock jenkins-docker
      ports:
       - '80:8080'
       - '443:8443'
