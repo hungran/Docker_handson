@@ -43,7 +43,7 @@ services:
       - '8443:8443'
       - '50000:50000'
      networks: 
-       - app-network
+      - app-network
    alpine:
      image: alpine
      user: nobody:nobody
