@@ -49,5 +49,5 @@ networks:
   app-network:
     driver: bridge
 labels: 
-  - jenkins-slaves
+  - "jenkins-slaves"
 ## TEST
