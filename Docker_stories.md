@@ -8,11 +8,11 @@
 - **Ưu điểm:** Dễ dàng phát triển, triển khai ban đầu, kiểm thử.
 - **Nhược điểm:**
     - 1/ Không có tính linh hoạt để mở rộng, thu hẹp quy mô khi có nhu cầu (
-        - Ví dụ 1: khi tải của ứng dụng cao (high workload) thì đòi hỏi ứng phải thêm máy chủ, thêm CPU, RAM...(hardware) 
+        - Ví dụ 1: khi tải của ứng dụng cao (high workload) thì đòi hỏi ứng dụng phải thêm máy chủ hoặc thêm CPU, RAM...(hardware) 
         - Ví dụ 2: khi muốn triển khai tính năng mới của phần mềm cần kiểm thử các tính năng (function) sẽ gặp nhiều khó khăn với những ứng dụng đang chạy chịu tải (product env).
-    - 2/ Chính vì khó để cập nhật tính năng mới nên sẽ khó để bắt kịp các xu hướng phát triển phần mềm mới, công nghệ mới
+    - 2/ Chính vì khó để cập nhật tính năng mới nên sẽ khó để bắt kịp các xu hướng phát triển phần mềm mới.
     - 3/ Các thành phần của ứng dụng bị tách biệt và cô lập và phụ thuộc lẫn nhau (ví dụ: web, app, database) 
-Mô hình Monolithich Application chủ yếu được chạy trên các hạ tầng truyền thống hoặc ảo hóa có mô tả như 2 hình sau:
+Mô hình Monolithich Application chủ yếu được chạy trên các hạ tầng truyền thống hoặc ảo hóa được mô tả như 2 hình sau:
 - Mô hình hạ tầng truyền thống:
 
     <img src="./pictures/traditional.png">
@@ -22,7 +22,7 @@ Mô hình Monolithich Application chủ yếu được chạy trên các hạ t�
 - Mô hình hạ tầng ảo hóa:
     <img src="./pictures/Virtualization.png">
 [nguồn - https://opensourceforu.com/2018/06/how-docker-differs-from-a-virtual-machine/](https://opensourceforu.com/2018/06/how-docker-differs-from-a-virtual-machine/)
-    - Tương tự như mô hình truyền thống, tuy nhiên thay vào đó có thêm GUEST OS và lớp Hypervisor để quản lý GUEST OS
+    - Tương tự như mô hình truyền thống, tuy nhiên thay vào đó có thêm GUEST OS và lớp Hypervisor để quản lý GUEST OS.
 
 #### Mô hình triển khai ứng dụng phân tán
 
@@ -31,8 +31,8 @@ Mô hình Monolithich Application chủ yếu được chạy trên các hạ t�
 - Micro-service application ra đời để giảm thiểu các nhược điểm mà mô hình monolithic đang tồn tại
 - **Ưu điểm:** 
     - Dễ dàng mở rộng cũng như thu hẹp ứng dụng/dịch vụ
-    - Các khối dịch vụ được phát triển độc lập nhưng kết nối một cách linh hoạt (giữa các service) do đó dễ dàng tích hợp công nghệ mới khi có nhu cầu
-    - Dễ sử dụng đối với các nhà phát triển mà không phụ thuộc vào hạ tầng phần cứng (Hardware)
+    - Các khối dịch vụ được phát triển độc lập nhưng kết nối một cách linh hoạt (giữa các service) do đó dễ dàng tích hợp công nghệ mới khi có nhu cầu.
+    - Dễ sử dụng đối với các nhà phát triển mà không phụ thuộc vào hạ tầng phần cứng (Hardware).
 - **Nhược điểm:** 
     - Khó bảo trì, vận hành
     - Mỗi dịch vụ (service) đều yêu cầu các thành phần và môi trường riêng biệt do đó cần được vận dụng một cách linh hoạt

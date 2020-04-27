@@ -12,7 +12,7 @@
 Giải thích:
 - Linux Container giống như một hệ điều hành được chia sẻ từ nhân của hệ thống linux và được cô lập các tiến trình từ hệ thống linux đó. --> bản chất của container là tiến trình (process) trong linux
 
-- Linux container được chạy tạm trên hệ điều hành và hệ điều hành chia sẻ lại cho tất cả các container tài nguyên mà nó có
+- Linux container được chạy tạm trên hệ điều hành và hệ điều hành chia sẻ lại cho tất cả các container tài nguyên mà nó có.
 - Linux container cô lập và lấy các tài nguyên được định nghĩa dạng namespace từ hệ điều hành linux và sử dụng một cách song song.
 - Có 7 linux namespace bao gồm [Link-nguồn- https://medium.com/@teddyking/linux-namespaces-850489d3ccf](https://medium.com/@teddyking/linux-namespaces-850489d3ccf)
     - Mount - isolate filesystem mount points
