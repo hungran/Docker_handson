@@ -2,7 +2,8 @@
 
 ### Sơ lược về mô hình ứng dụng truyền thống | 
 #### Monolithic application
-    <img src="https://www.slashroot.in/sites/default/files/Monolithic%20Application%20Architecture.png">
+
+<img src="https://www.slashroot.in/sites/default/files/Monolithic%20Application%20Architecture.png">
 
 - **Ưu điểm:** Dễ dàng phát triển, triển khai ban đầu, kiểm thử.
 - **Nhược điểm:**
@@ -13,7 +14,9 @@
     - 3/ Các thành phần của ứng dụng bị tách biệt và cô lập và phụ thuộc lẫn nhau (ví dụ: web, app, database) 
 Mô hình Monolithich Application chủ yếu được chạy trên các hạ tầng truyền thống hoặc ảo hóa có mô tả như 2 hình sau:
 - Mô hình hạ tầng truyền thống:
+
     <img src="./pictures/traditional.png">
+   
     - Bao gồm máy chủ vật lý có CPU, RAM, DISK
 
 - Mô hình hạ tầng ảo hóa:
@@ -37,8 +40,8 @@ Mô hình Monolithich Application chủ yếu được chạy trên các hạ t�
     - Bao gồm các lớp ứng dụng độc lập (service layer)
     - Lớp kết nối các ứng dụng độc lập (service broker layer)
     - Lớp ứng dụng đầu cuối (service consumer layer)
-- Thành phần cũng như trái tim của micro-service chính là Containers => Chúng được đặt bên trong các máy chủ (hosts)
-- Trong các công cụ được quản lý, vận hành Container thì Docker của công ty Docker được biết đến nhiều nhất
+- Thành phần cũng như trái tim của micro-service chính là Containers => Chúng được đặt bên trong các máy chủ (hosts).
+- Trong các công cụ quản lý, vận hành Container thì Docker của công ty Docker được biết đến nhiều nhất.
 
 - **Docker** ra đời và được biết đến như công cụ dùng để phát triển phần mềm nhằm một phần đưa việc phát triển phần mềm theo dạng micro-services, giảm thiểu các yếu nhược điểm còn tồn tại trong mô hình ứng dụng monolithic, giảm lệ thuộc vào hạ tầng truyền thống. Được phát triển bởi công ty Docker.
 
@@ -58,4 +61,4 @@ Mô hình Monolithich Application chủ yếu được chạy trên các hạ t�
 
 #### Tổ chức Open Container Initiative (OCI) 
 Ra đời nhằm mục đích chuẩn hóa các thành phần bên trong container bao gồm tiêu chuẩn của image và container runtime. Tổ chức này bao gồm Docker và CoreOS chủ yếu xây dựng.
-bài tiếp theo: tìm hiểu về Linux Container và Docker Container Runtime [Link](./container.md)
+- Bài tiếp theo: tìm hiểu về Linux Container và Docker Container Runtime [Link](./container.md)
