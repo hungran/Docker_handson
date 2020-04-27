@@ -1,4 +1,4 @@
-Linux Container là gì:
+### Linux Container là gì:
 [Nguồn https://www.docker.com/resources/what-container](https://www.docker.com/resources/what-container)
 
 <img src="https://https://www.redhat.com/cms/managed-files/virtualization-vs-containers.png">
@@ -22,3 +22,6 @@ Giải thích:
     - Network - isolate network interfaces
     - User - isolate UID/GID number spaces
     - Cgroup - isolate cgroup root 
+
+### Container Runtime
+tobe..
