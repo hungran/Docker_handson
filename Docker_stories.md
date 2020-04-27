@@ -1,7 +1,8 @@
 # Why Docker? | Tại sao lại là docker?
 
 ### Sơ lược về mô hình ứng dụng truyền thống | 
-Monolithic application
+#### Monolithic application
+    <img src="https://www.slashroot.in/sites/default/files/Monolithic%20Application%20Architecture.png">
 
 - **Ưu điểm:** Dễ dàng phát triển, triển khai ban đầu, kiểm thử.
 - **Nhược điểm:**
@@ -11,14 +12,16 @@ Monolithic application
     - 2/ Chính vì khó để cập nhật tính năng mới nên sẽ khó để bắt kịp các xu hướng phát triển phần mềm mới, công nghệ mới
     - 3/ Các thành phần của ứng dụng bị tách biệt và cô lập và phụ thuộc lẫn nhau (ví dụ: web, app, database) 
 Mô hình Monolithich Application chủ yếu được chạy trên các hạ tầng truyền thống hoặc ảo hóa có mô tả như 2 hình sau:
-- Mô hình hạ tầng truyền thống
+- Mô hình hạ tầng truyền thống:
     <img src="./pictures/traditional.png">
-- Bao gồm máy chủ vật lý có CPU, RAM, DISK
-- Mô hình hạ tầng ảo hóa
+    - Bao gồm máy chủ vật lý có CPU, RAM, DISK
+
+- Mô hình hạ tầng ảo hóa:
     <img src="./pictures/Virtualization.png">
 [nguồn - https://opensourceforu.com/2018/06/how-docker-differs-from-a-virtual-machine/](https://opensourceforu.com/2018/06/how-docker-differs-from-a-virtual-machine/)
+    - Tương tự như mô hình truyền thống, tuy nhiên thay vào đó có thêm GUEST OS và lớp Hypervisor để quản lý GUEST OS
 
-### Mô hình triển khai ứng dụng phân tán
+#### Mô hình triển khai ứng dụng phân tán
 
 <img src="https://microservices.io/i/Microservice_Architecture.png">
 
@@ -38,6 +41,7 @@ Mô hình Monolithich Application chủ yếu được chạy trên các hạ t�
 - Trong các công cụ được quản lý, vận hành Container thì Docker của công ty Docker được biết đến nhiều nhất
 
 - **Docker** ra đời và được biết đến như công cụ dùng để phát triển phần mềm nhằm một phần đưa việc phát triển phần mềm theo dạng micro-services, giảm thiểu các yếu nhược điểm còn tồn tại trong mô hình ứng dụng monolithic, giảm lệ thuộc vào hạ tầng truyền thống. Được phát triển bởi công ty Docker.
+
 ### Vì sao lại là Docker
 [Nguồn https://www.docker.com/why-docker](https://www.docker.com/why-docker)
 
